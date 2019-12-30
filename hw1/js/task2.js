@@ -16,16 +16,8 @@ function outputData(lastName, firstName, fatherName, age, gender) {
   let ageInFuture = age + 5;
   let retirement;
   let exit;
-  if (gender === true) {
-    gender = 'мужской';
-  } else {
-    gender = 'женский';
-  }
-  if (age <= 65) {
-    retirement = 'нет';
-  } else {
-    retirement = 'да';
-  }
+  gender = gender ? 'мужской' : 'женский';
+  retirement = age <= 65 ? 'нет' : 'да';
   if (lastName === '' || firstName === '' || fatherName === '' || age === '' || age < 7) {
     exit = confirm('Анкета заполнена некорректно. Хотите выйти?');
   } else {

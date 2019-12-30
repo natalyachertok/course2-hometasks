@@ -19,9 +19,8 @@ function isPolindrom(str) {
     if (str[i] != str[j]) {
       return false;
     }
-    else return true;
   }
-
+return true;
 }
 
 console.log(isPolindrom('aииa'));

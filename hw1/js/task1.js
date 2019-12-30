@@ -5,7 +5,7 @@ function getNumWord(num, word1, word2, word5) {
     case 1:
       switch (doubleDigit) {
         case 11:
-          alert(num + ' ' + word5);
+          alert (num + ' ' + word5);
           break;
         case 21:
           alert(num + ' ' + word1);
